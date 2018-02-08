@@ -1,0 +1,18 @@
+﻿<Page x:Class="jhone_mvvmLigth.View.WelcomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:jhone_mvvmLigth.View"
+      Title="WelcomeView" Height="300" Width="300">
+
+    <Grid>
+ 
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" >
+   
+            <TextBlock Text="{Binding Welcome.Introduction}" FontSize="30" ></TextBlock>
+      
+        </StackPanel>
+    
+    </Grid>
+</Page>

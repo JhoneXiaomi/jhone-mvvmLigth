@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:jhone_mvvmLigth"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" 
+        Height="350" Width="525">
     <Window.DataContext>
-        <Binding Path="Main" Source="{StaticResource Locator}"></Binding>
+        <Binding Path="Welcome" Source="{StaticResource Locator}"></Binding>
     </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
@@ -16,5 +17,10 @@
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding Title}"></TextBlock>
         <Button Grid.Row="1" Command="{Binding ChangeTitleCommand}">Click Me!</Button>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" >
+
+            <TextBlock Text="{Binding Welcome.Introduction}" FontSize="30" ></TextBlock>
+
+        </StackPanel>
     </Grid>
 </Window>

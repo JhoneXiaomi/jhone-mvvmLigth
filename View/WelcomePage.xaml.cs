@@ -1,5 +1,4 @@
-﻿using jhone_mvvmLigth.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,17 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace jhone_mvvmLigth
+namespace jhone_mvvmLigth.View
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// WelcomePage.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WelcomePage : Page
     {
-        public MainWindow()
+        public WelcomePage()
         {
             InitializeComponent();
-            ///this.DataContext = new WelcomeViewModel();
+            this.DataContext = new WelcomeModel();
         }
     }
 }

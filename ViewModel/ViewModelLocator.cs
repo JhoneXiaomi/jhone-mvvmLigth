@@ -45,17 +45,10 @@ namespace jhone_mvvmLigth.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
-            SimpleIoc.Default.Register<PageViewModel>();
+            SimpleIoc.Default.Register<WelcomeViewModel>();
 
-            var navigationService = this.CreateNavigationService();
-            SimpleIoc.Default.Register<INavigationService>(() => navigationService);
         }
 
-        private INavigationService CreateNavigationService()
-        {
-   
-            return null;
-        }
         public MainViewModel Main
         {
             get
@@ -64,7 +57,13 @@ namespace jhone_mvvmLigth.ViewModel
             }
         }
 
-    
+        public WelcomeViewModel Welcome
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<WelcomeViewModel>();
+            }
+        }
 
         public static void Cleanup()
         {
