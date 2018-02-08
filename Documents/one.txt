@@ -1,1 +1,25 @@
-﻿
+﻿mvvm框架使用入门：http://www.cnblogs.com/manupstairs/p/4909585.html
+wpf的mvvn模式：http://blog.csdn.net/fenyu8/article/details/53323727
+
+
+Model
+Model就是一个class，是对现实中事物的抽象，开发过程中涉及到的事物都可以抽象为Model，例如客户，客户的姓名、编号、电话、住址等属性也对应了class中的Property，客户的下订单、付款等行为对应了class中的方法。
+
+View
+View很好理解，就是界面。对应WPF中的xaml界面设计。
+
+ViewModel
+上面说过Model抽象，那么ViewModel就是对View的抽象。显示的数据对应着ViewMode中的Property，执行的命令对应着ViewModel中的Command
+
+
+使用ViewModelLocator有啥好处呢？
+
+首先View和ViewModel之间不再直接引用，而是通过ViewModelLocator关联。
+
+其次储存在ViewModelLocator里的ViewModel类似于单例的存在，可以在全局引用绑定。
+
+同时避免了某些情况下频繁创建ViewModel，却未做好资源释放造成的内存泄漏。（这里并不是说所有的ViewModel都必须放到ViewModelLocator）
+
+下面我们来看下Command是如何绑定的，通知PropertyChanged以及ViewModelBase类 。
+
+我们添加一个Button，然后通过Command来把文字修改为Hello MvvmLight。

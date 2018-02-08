@@ -14,7 +14,9 @@
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using Microsoft.Practices.ServiceLocation;
+using System.Windows.Navigation;
 
 namespace jhone_mvvmLigth.ViewModel
 {
@@ -43,8 +45,17 @@ namespace jhone_mvvmLigth.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<PageViewModel>();
+
+            var navigationService = this.CreateNavigationService();
+            SimpleIoc.Default.Register<INavigationService>(() => navigationService);
         }
 
+        private INavigationService CreateNavigationService()
+        {
+   
+            return null;
+        }
         public MainViewModel Main
         {
             get
@@ -52,7 +63,9 @@ namespace jhone_mvvmLigth.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
-        
+
+    
+
         public static void Cleanup()
         {
             // TODO Clear the ViewModels

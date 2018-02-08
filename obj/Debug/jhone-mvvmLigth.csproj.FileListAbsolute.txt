@@ -27,3 +27,4 @@ G:\6、person_c\2、项目代码\jhone-mvvmLigth\jhone-mvvmLigth\obj\Debug\jhone
 G:\6、person_c\2、项目代码\jhone-mvvmLigth\jhone-mvvmLigth\obj\Debug\jhone-mvvmLigth.csproj.CoreCompileInputs.cache
 G:\6、person_c\2、项目代码\jhone-mvvmLigth\jhone-mvvmLigth\obj\Debug\jhone-mvvmLigth.exe
 G:\6、person_c\2、项目代码\jhone-mvvmLigth\jhone-mvvmLigth\obj\Debug\jhone-mvvmLigth.pdb
+G:\6、person_c\2、项目代码\jhone-mvvmLigth\jhone-mvvmLigth\obj\Debug\jhone-mvvmLigth.csprojResolveAssemblyReference.cache
