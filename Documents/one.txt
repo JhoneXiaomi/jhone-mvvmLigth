@@ -1,6 +1,6 @@
 ﻿mvvm框架使用入门：http://www.cnblogs.com/manupstairs/p/4909585.html
 wpf的mvvn模式：http://blog.csdn.net/fenyu8/article/details/53323727
-
+http://www.cnblogs.com/wzh2010/p/6285990.html
 
 Model
 Model就是一个class，是对现实中事物的抽象，开发过程中涉及到的事物都可以抽象为Model，例如客户，客户的姓名、编号、电话、住址等属性也对应了class中的Property，客户的下订单、付款等行为对应了class中的方法。
